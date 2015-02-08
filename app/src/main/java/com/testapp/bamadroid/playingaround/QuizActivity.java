@@ -1,6 +1,7 @@
 package com.testapp.bamadroid.playingaround;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MainActivity extends Activity {
+public class QuizActivity extends Activity {
 
     private Button mTrueButton;
     private Button mFalseButton;
@@ -19,6 +20,7 @@ public class MainActivity extends Activity {
     private Button mPrevButton;
     private TextView mTextView;
     private TextView mQuestionTextView;
+    
 
     private static final String TAG = "MainLogActivity";
     private static final String KEY_INDEX = "index";
@@ -46,7 +48,7 @@ public class MainActivity extends Activity {
     {
         boolean answerIsTrue =  mQuestionBank[mCurrentIndex].ismTrueQeustion();
 
-        int messageResId = 0;
+        int messageResId;
 
         if (userPressedTrue == answerIsTrue)
         {
@@ -68,6 +70,17 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
+
+        Button mCheatButton;
+        mCheatButton = (Button) findViewById(R.id.cheat_button);
+        mCheatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start CheatActivity
+                Intent i = new Intent(QuizActivity.this, CheatActivity.class);
+                startActivity(i);
+            }
+        });
 
 
         mTrueButton = (Button) findViewById(R.id.trueButton);
@@ -117,6 +130,7 @@ public class MainActivity extends Activity {
         if (savedInstanceState != null){
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX,0);
         }
+
 
         updateQuestion();
     }

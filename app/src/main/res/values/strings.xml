@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">PlayingAround</string>
+    <string name="app_name">GeoQuiz</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="true_button">True</string>
@@ -17,6 +17,10 @@
     <string name="question_talon">Talon is 2 years old.</string>
     <string name="question_carter">Carter is 3 years old.</string>
     <string name="question_old">Mom looks older than dad.</string>
-
+    <string name="cheat_button">Cheat!</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="judgment_toast">Cheating is wrong.</string>
+    <string name="warning_text_view">Are you sure you want to do this?</string>
+    <string name="title_activity_cheat">CheatActivity</string>
 
 </resources>
