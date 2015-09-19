@@ -3,10 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GEOQUIZ.iml" filepath="$PROJECT_DIR$/GEOQUIZ.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PlayingAround.iml" filepath="$PROJECT_DIR$/PlayingAround.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PlayingAround_1stChallenge.iml" filepath="$PROJECT_DIR$/PlayingAround_1stChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
-
